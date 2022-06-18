@@ -1,0 +1,73 @@
+:root[color-theme="pink"] {
+  --background: #33fdea;
+  --boxcolor: #fff;
+  --circle: #fff;
+  --about: #000;
+}
+:root[color-theme="dark"] {
+  --background: #000;
+  --boxcolor: #2f2f2f;
+  --circle: #fff;
+  --about: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 3rem;
+  text-align: right;
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+
+header > span {
+  cursor: pointer;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+#smallCircle {
+  position: absolute;
+  width: 28rem;
+  height: 28rem;
+  top: -10rem;
+  left: -10rem;
+  opacity: 0.2;
+  border-radius: 30px;
+  background-color: var(--circle);
+}
+#bigCircle {
+  position: absolute;
+  width: 38rem;
+  height: 38rem;
+  bottom: -5rem;
+  right: -18rem;
+  opacity: 0.2;
+  border-radius: 30px;
+  background-color: var(--circle);
+}
+#projectBox > ul {
+  display: inline-flex;
+  list-style: none;
+  width: 100%;
+  height: 100vh;
+  transition: all 1s;
+}
+#projectBox > ul > li {
+  min-width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+#projectBox > ul > li {
+}

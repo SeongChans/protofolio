@@ -1,0 +1,88 @@
+.bold {
+  font-weight: bold;
+}
+.whiteFont {
+  color: var(--circle);
+}
+.about {
+  color: var(--about);
+}
+.whiteBackground {
+  background-color: var(--boxcolor);
+}
+.fontsize3rem {
+  font-size: 3rem;
+}
+.fontsize5rem {
+  font-size: 5rem;
+}
+.fontsize7rem {
+  font-size: 7rem;
+}
+.fontsize8rem {
+  font-size: 8rem;
+}
+.fontsize10rem {
+  font-size: 10rem;
+}
+.fontsize15rem {
+  font-size: 15rem;
+}
+.line80 {
+  line-height: 80%;
+}
+.whiteboxWidth {
+  width: 15rem;
+  background-color: var(--boxcolor);
+  border-radius: 1rem;
+}
+.whiteBox5rem {
+  height: 5rem;
+}
+.whiteBox10rem {
+  height: 8rem;
+}
+.whiteBox15rem {
+  height: 13rem;
+}
+.whiteBox20rem {
+  height: 15rem;
+}
+.centertextBox10 {
+  padding-top: 1.5rem;
+  width: 100%;
+  height: 15rem;
+  text-align: center;
+}
+.subject {
+  padding-top: 2rem;
+  padding-left: 6rem;
+}
+.flexalignStart {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexalignStart > div {
+  margin-left: 2rem;
+}
+.flexalignStart > div > div {
+  margin-bottom: 1rem;
+}
+#projectBox {
+  width: 100%;
+  height: 90vh;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.contact {
+  height: 70%;
+}
+#footer {
+  height: 30%;
+}

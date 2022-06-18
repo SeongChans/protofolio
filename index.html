@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="./css/port.css" />
+    <link rel="stylesheet" href="./css/PORTPOLIO.CSS" />
+  </head>
+  <body>
+    <div>
+      <section>
+        <header><span id="darkMode" class="whiteFont">DARK</span></header>
+        <div id="smallCircle" class="whiteBackground"></div>
+        <div class="fontsize10rem whiteFont bold subject">
+          <i>HI,</i>
+        </div>
+        <div class="fontsize8rem whiteFont bold subject line80">
+          <i>I`M Seong<br />Chan</i>
+        </div>
+        <div id="bigCircle" class="whiteBackground" data-id="Seongchan"></div>
+      </section>
+      <section>
+        <div class="fontsize5rem whiteFont centertextBox10 bold">
+          SeongChan`s PORTPOLIO
+        </div>
+        <div class="bold centertextBox10 fontsize5rem whiteBackground about">
+          ABOUT ME
+        </div>
+        <div>
+          <p class="bold fontsize3rem whiteFont subject">SKILLS</p>
+          <div class="flexalignStart">
+            <div>
+              <div class="whiteboxWidth whiteBox15rem"></div>
+            </div>
+            <div>
+              <div class="whiteboxWidth whiteBox5rem"></div>
+              <div class="whiteboxWidth whiteBox10rem"></div>
+            </div>
+            <div class="whiteboxWidth whiteBox10rem"></div>
+            <div class="whiteboxWidth whiteBox20rem"></div>
+          </div>
+        </div>
+      </section>
+      <section class="flexCenter">
+        <div id="projectBox" class="whiteBackground flexCenter about">
+          <ul>
+            <li class="project">project1</li>
+            <li class="project">project2</li>
+            <li class="project">project3</li>
+            <li class="project">project4</li>
+          </ul>
+        </div>
+        <div></div>
+      </section>
+      <section>
+        <div class="whiteFont fontsize5rem bold subject contact">
+          CONTACT ME
+        </div>
+      </section>
+      <section>
+        <div id="footer" class="whiteBackground"></div>
+      </section>
+    </div>
+    <script>
+      window.onload = function () {
+        console.log(
+          document.getElementById("bigCircle").getAttribute("data-id")
+        );
+        console.log(document.getElementById("bigCircle").getAttribute("class"));
+        document.documentElement.setAttribute("color-theme", "pink");
+      };
+      let darkMode = document.getElementById("darkMode");
+      darkMode.addEventListener("click", (e) => {
+        if (e.target.innerText === "DARK") {
+          document.documentElement.setAttribute("color-theme", "dark");
+          e.target.innerText = "PINK";
+        } else {
+          document.documentElement.setAttribute("color-theme", "pink");
+          e.target.innerText = "DARK";
+        }
+      });
+    </script>
+    <script href="./js/port.js"></script>
+  </body>
+</html>
